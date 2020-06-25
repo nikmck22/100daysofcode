@@ -1,17 +1,22 @@
-#Iterables
+#loops and conditionals
 
-list = [1,2,3,4,5]
-tuple = (2,7,8,9,10)
-string = "hello world"
+numbers = [1,2,3,4,5,6,7,8,9]
+total = 0 
 
-# for elem in list:
-#   print(elem)
+for n in numbers:
+  if n % 2 == 0: 
+    total += n
+print(total)
 
-list_iterator = iter(list)
 
-while True:
-  try:
-    next_elem = next(list_iterator)
-    print(next_elem)
-  except StopIteration:
-    break
+alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+vowels = 'aeiouAEIOU'
+my_string = "Packt publishing rocks!"
+
+
+characters = []
+for ch in my_string:
+  if ch not in vowels and ch in alpha:
+    characters.append(ch)
+consonants = ''.join(characters)
+print(consonants)
