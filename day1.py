@@ -1,27 +1,17 @@
-#While Loops
+#Iterables
 
-index = 0
-names = ["bob", "josh", "harry"]
+list = [1,2,3,4,5]
+tuple = (2,7,8,9,10)
+string = "hello world"
 
-while index < len(names):
-  name = names[index]
-  print(name)
-  index = index + 1
+# for elem in list:
+#   print(elem)
 
-
-  total = 0
-  v = 1
-
-  while v <= 10:
-    total = total + v
-    v = v + 1
-  print(total)
-
+list_iterator = iter(list)
 
 while True:
-  a, b = int(input("a: ")), int(input("b: "))
-  if a + b == 20:
-    print("stopping loop")
+  try:
+    next_elem = next(list_iterator)
+    print(next_elem)
+  except StopIteration:
     break
-  else:
-    print("a + b is equal to 20")
