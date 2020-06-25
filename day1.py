@@ -1,22 +1,16 @@
-#loops and conditionals
+#prime number checker
 
-numbers = [1,2,3,4,5,6,7,8,9]
-total = 0 
+n = int(input("n = "))
 
-for n in numbers:
-  if n % 2 == 0: 
-    total += n
-print(total)
+if n >= 2:
+  divisors = [] 
+  for divisor in range(2, n):
+    if n % divisor == 0:
+      divisors.append(divisor)
 
-
-alpha = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-vowels = 'aeiouAEIOU'
-my_string = "Packt publishing rocks!"
-
-
-characters = []
-for ch in my_string:
-  if ch not in vowels and ch in alpha:
-    characters.append(ch)
-consonants = ''.join(characters)
-print(consonants)
+  if len(divisors) == 0:
+    print("{:d} is prime!".format(n))
+  else:
+    print("{:d} is not prime because {:} divide {:d}".format(n, str(divisors), n))
+else:
+  print("{:d} is not prime!".format(n))
