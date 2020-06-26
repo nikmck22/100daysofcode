@@ -1,16 +1,15 @@
-#recursion
+# def count_vowels(s, i = 0):
+#   if (i == len(s)): return 0
+  
+#   c = s[i]
+#   if c in 'aeiou':
+#     return count_vowels(s, i + 1) + 1
+#   return count_vowels(s, i + 1)
+# print(count_vowels("hello"))
 
-def double(n):
-  if n == 0:
-    return 0
-  return double(n - 1) + 2
 
-print(double(4))
+def digit_sum(n):
+  if n == 0: return 0
+  return digit_sum(n//10) + n % 10
 
-
-def exponentiate(b, e):
-  if (e == 0): return 1
-
-  return exponentiate(b, e - 1) * b
-
-print(exponentiate(4, 3))
+print(digit_sum(345))
