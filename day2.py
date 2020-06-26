@@ -1,20 +1,16 @@
-alpha = "abcdefghijklmnopqrstuvwxyz"
+#recursion
 
-def encrypt(s, shift = 3):
-  encrypted_str = ""
-  for c in s:
-    index = alpha.index(c)
-    shifted_index = (index + shift) % len(alpha)
-    encrypted_str += alpha[shifted_index]
-  return encrypted_str
+def double(n):
+  if n == 0:
+    return 0
+  return double(n - 1) + 2
 
-def decrypt(e, shift = 3):
-  decrypted_str = ""
-  for c in e:
-    index = alpha.index(c)
-    shifted_index = (index - shift) % len(alpha)
-    decrypted_str += alpha[shifted_index]
-  return decrypted_str
+print(double(4))
 
 
-print(decrypt("khoorzruog"))
+def exponentiate(b, e):
+  if (e == 0): return 1
+
+  return exponentiate(b, e - 1) * b
+
+print(exponentiate(4, 3))
