@@ -1,9 +1,20 @@
-#return vs. void functions
+alpha = "abcdefghijklmnopqrstuvwxyz"
 
-def reverse(s):
-  new_str = ""
-  for i in range(len(s)):
-    new_str += s[len(s) - i - 1]
-  return new_str
+def encrypt(s, shift = 3):
+  encrypted_str = ""
+  for c in s:
+    index = alpha.index(c)
+    shifted_index = (index + shift) % len(alpha)
+    encrypted_str += alpha[shifted_index]
+  return encrypted_str
 
-print(reverse("1234"))
+def decrypt(e, shift = 3):
+  decrypted_str = ""
+  for c in e:
+    index = alpha.index(c)
+    shifted_index = (index - shift) % len(alpha)
+    decrypted_str += alpha[shifted_index]
+  return decrypted_str
+
+
+print(decrypt("khoorzruog"))
