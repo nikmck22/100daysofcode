@@ -1,10 +1,17 @@
-#function basics
+#parameters and arguments
 
-PI = 3.141592
+import datetime as dt
 
-# print(5*5*PI)
+# def add(a, b, c):
+#   return a + b + c
 
-def circle_area(r):
-  return PI*r*r
+# print(add(1, 2, 3))
 
-print(circle_area(5))
+
+def add(*numbers):
+  total = 0
+  for n in numbers:
+    total += n
+  return total
+
+print(add(1,2,3,4,5))
