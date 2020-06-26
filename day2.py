@@ -1,17 +1,9 @@
-#parameters and arguments
+#return vs. void functions
 
-import datetime as dt
+def reverse(s):
+  new_str = ""
+  for i in range(len(s)):
+    new_str += s[len(s) - i - 1]
+  return new_str
 
-# def add(a, b, c):
-#   return a + b + c
-
-# print(add(1, 2, 3))
-
-
-def add(*numbers):
-  total = 0
-  for n in numbers:
-    total += n
-  return total
-
-print(add(1,2,3,4,5))
+print(reverse("1234"))
