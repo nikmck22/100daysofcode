@@ -2,3 +2,6 @@ Day 3 notes
  - const, var, let variables
  - typeof
  - interpolation
+ - JS has one type of number vs. other object oriented languages
+ - Boolean, truthy and falsey values
+ 

@@ -1,23 +1,20 @@
-// Challenge: It your Dog's Birthday!
+// Challenge - Manage Inventory
 
 /*
- Create 2 variables related to your dog. Make one of them its age and update it by one.
- Log out all the values in a friendly way of your choosing.
+    1. Your company is launching 3 new products: toilet paper, bottled water, and sanitizer. Store them in a list.
+    2. Turns out there was a mistake and toilet paper was actually paper towels. Make the appropriate update.
+    3. Sanitizer sells out. Remove it from the list.
+    4. Business is so good the company launches a new product: Bleach. Add it to the list.
+    
+    Note: After creating the initial array do not just create a brand new array. Modify it accordingly.
 */
 
-// const name = 'diesel';
-// let age = 2;
-// age = age + 1;
 
+let supplies = ["toilet paper", "water", "sanitizer"];
 
+supplies[0] = "paper towels";
 
-// console.log('my dog ' + name + ' is turning ' + age)
+supplies.pop();
+supplies.push("bleach");
 
-
-
-
-let firstName = 'Harry';
-let lastName = 'Potter';
-const fullName = `${firstName} ${lastName}`;
-
-console.log(fullName)
+console.log(supplies)
