@@ -1,40 +1,26 @@
-// Challenge 1: User Age
+// Challenge: Customer Upgrade
 
 /*
- 1. Our business wants to keep track of what age range a user falls into.
- 2. If they are 12 or younger log 'child'.
- 3. If not a child but the user's age is under 20 log 'teenager'.
- 4. If neither log 'adult'.
+ 1. Our business wants to convince users to upgrade their accounts.
+ 2. Check a user's account type (switch) of 'shopper', 'super shopper', & 'guest'.
+ 3. If a user is a 'guest' ask them if they want to upgrade to a 'shopper'.
+ 4. If a user is a 'shopper' ask if they want to upgrade to a 'super shopper'
+ 5. If a user is a 'super shopper' tell them they are the best!
+ 6. If we don't know user's status they are a guest.
 */
 
-const age = 10;
+const userType = 'super shopper';
 
-if (age > 12 && age < 20) {
-  console.log('teenager');
-} else if (age <= 12) {
-  console.log('child');
-} else {
-  console.log('adult');
+switch (userType){
+case 'shopper':
+  console.log('upgrade to super?');
+  break;
+case 'guest':
+  console.log('upgrade to shopper?');
+  break;
+case 'super shopper':
+  console.log('the best!');
+  break;
+default:
+  console.log('would you like to upgrade?');
 }
-
-// OR see below
-// if(age <= 12) {
-//   console.log('child');
-// } else if(age < 20) {
-//   console.log('teenager');
-// } else {
-//   console.log('adult');
-// }
-
-
-// Challenge 2: Practice and or Operators
-
-/*
-    1. Look at the examples below and see if you can guess the 
-*/
-
-// console.log(10 === 10 && 5 < 4); false
-
-// console.log(10 === 10 || 5 < 4); true
-
-// console.log((5 >= 5 || 4 > 4) && 3 + 2 === 5); true
