@@ -1,28 +1,19 @@
-// Challenge: Total Price
+// Challenge: Analytics
 
 /*
- 1. Give our customer their total price. 
- 2. Add the price of the items together with a sales tax of 8%.
- 3. Log the price. 
+ 1. Track our user's activity.
+ 2. While the total updates is under 10 updates keep logging the update count.
+ 3. After we reach our threshold say, 'No longer tracking the user'.
+ 4. Change the logic to a do while with it updating just a single time. 
 */
 
-const cartItems = [
-  { quantity: 1, price: 5 },
-  { quantity: 3, price: 4 },
-  { quantity: 10, price: 1}
-];
+let totalUpdates = 10;
 
-let total = 0;
 
-// for (let i = 0; i < cartItems.length; i++) {
-//   total += cartItems[i].price * cartItems[i].quantity;
-// }
-
-for (const cartItem of cartItems) {
-  total += cartItem.price * cartItem.quantity;
+do {
+  totalUpdates++;
+  console.log(totalUpdates);
 }
+while (totalUpdates < 10);
 
-
-total *= 1.08;
-
-console.log(total)
+console.log('done')
