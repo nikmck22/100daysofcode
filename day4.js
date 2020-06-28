@@ -1,24 +1,21 @@
-/* Challenge - User Profile Form
-    1. Your organization needs the user's personal information to ship the inventory to. Create an object to store the data in.
-    2. Store a user's first and last name.
-    3. Store a user's address. City and state will be enough. Have this as a nested object. (Interface Segregation Principle)
-    4. The business wants to give more personalized ads and wants to collect information about the user's hobbies. Create a list of hobbies.
-    5. Are they a gold member? Store a boolean with this value.
+// Challenge: Checkout Order Details
+
+/*
+ 1. Create 3 variables to store an item price. The last price 2 items were ordered (multiplication).
+ 2. Tell the user what the total price is before discount.
+ 3. Inform the user what the average price of items is before discount.
+ 4. Inform them the final price after saving 5 dollars with promo code 'I Got 5 On It'.
 */
 
+const price1 = 5;
+const price2 = 3;
+const price3 = 7;
 
-const user = {
-  firstName: 'bob',
-  lastName: 'smith'
-};
+const totalPrice = price1 + price2 + (price3 * 2);
 
-user['address'] = {
-  city: 'atlanta',
-  state: 'georgia'
-};
+const avgPrice = totalPrice / 4;
 
-user.hobbies = ['fishing', 'boating'];
-user.isGoldMember = true;
- 
+const discountPrice = totalPrice - 5;
 
-console.log(user.address)
+
+console.log(totalPrice, avgPrice, discountPrice)
