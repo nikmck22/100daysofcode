@@ -1,12 +1,16 @@
-// Challenge: Best Promo Code
+// Challenge: Upsell Quantity
 
 /*
- 1. Our business wants to make sure we give our users the best promo codes available for two categories.
- 2. Create two promo codes in variables and compare to find out if the first one is a better value for the dollars off category. 
+ 1. Our business wants to upsell items in a user's cart. 
+ 2. Ask the user if they would like to add one more item (with the variable provided). Update the quantity variable if they do.
+ 3. Log the current quantity.
 */
+const customerAnswer = Math.random() >= 0.5;
+let quantity = 2;
+
+if (customerAnswer) {
+  quantity++;
+}
 
 
-const promo1 = 10;
-const promo2 = 15;
-
-console.log(promo1 < promo2)
+console.log(quantity)
