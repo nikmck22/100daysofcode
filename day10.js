@@ -40,3 +40,41 @@ var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 myArray.unshift(["Paul", 35]);
 
+
+// Create a shopping list in the variable myList. The list should be a multi-dimensional array containing several sub-arrays.
+// The first element in each sub-array should contain a string with the name of the item. The second element should be a number representing the quantity i.e.
+// ["Chocolate Bar", 15]
+// There should be at least 5 sub-arrays in the list.
+var myList = [["dog food", 2], ["fruit", 5], ["veggies", 5], ["cereal", 1], ["coffee", 2]];
+
+
+// Create a function called reusableFunction which prints "Hi World" to the dev console.
+// Call the function.
+function reusableFunction() {
+  console.log("Hi World");
+}
+reusableFunction();
+
+
+// Create a function called functionWithArgs that accepts two arguments and outputs their sum to the dev console.
+// Call the function with two numbers as arguments.
+function functionWithArgs(par1, par2) {
+  console.log(par1 + par2);
+}
+functionWithArgs(2, 3)
+
+
+// Add a local variable to myOutfit function to override the value of outerWear with "sweater".
+var outerWear = "T-Shirt";
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+myOutfit();
+
+
+// Create a function timesFive that accepts one argument, multiplies it by 5, and returns the new value. See the last line in the editor for an example of how you can test your timesFive function.
+function timesFive(num) {
+  return num * 5;
+}
+timesFive(2);
