@@ -67,3 +67,5 @@ Day 13 notes
   - building js objects
   - using properties, [finding, updating, adding, etc]
   - hasOwnProperty
+  - JSON - JavaScript Object Notation
+  - nested objects
