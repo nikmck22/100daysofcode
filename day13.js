@@ -14,10 +14,7 @@ var testObj = {
   "shirt": "jersey",
   "shoes": "cleats"
 };
-
-// Only change code below this line
-
-var hatValue = testObj.hat;      // Change this line
+var hatValue = testObj.hat;  
 var shirtValue = testObj.shirt; 
 
 
@@ -28,11 +25,8 @@ var testObj = {
   "my side": "veggies",
   "the drink": "water"
 };
-
-// Only change code below this line
-
-var entreeValue = testObj["an entree"];   // Change this line
-var drinkValue = testObj["the drink"];    // Change this line
+var entreeValue = testObj["an entree"];  
+var drinkValue = testObj["the drink"];    
 
 
 
@@ -42,10 +36,7 @@ var testObj = {
   16: "Montana",
   19: "Unitas"
 };
-
-// Only change code below this line
-
-var playerNumber = 16;       // Change this line
+var playerNumber = 16;      
 var player = testObj[playerNumber];   
 
 
@@ -57,8 +48,6 @@ var myDog = {
   "tails": 1,
   "friends": ["freeCodeCamp Campers"]
 };
-
-// Only change code below this line
 myDog.name = "Happy Coder"; //(update)
 myDog.bark = "woof"; //(add)
 delete myDog.tails; //(delete)
@@ -68,8 +57,6 @@ delete myDog.tails; //(delete)
 // Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
 function phoneticLookup(val) {
   var result = "";
-
-  // Only change code below this line
   var lookup = {
     "alpha": "Adams",
     "bravo": "Boston",
@@ -79,25 +66,20 @@ function phoneticLookup(val) {
     "foxtrot": "Frank"
   }; 
   result = lookup[val];
-
-  // Only change code above this line
   return result;
 }
-
 phoneticLookup("charlie");
 
 
 
 // Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp). If the property is found, return that property's value. If not, return "Not Found".
 function checkObj(obj, checkProp) {
-  // Only change code below this line
 if(obj.hasOwnProperty(checkProp)) {
   return obj[checkProp];
 } else {
   return "Not Found";
 }
   return "Change Me!";
-  // Only change code above this line
 }
 
 
@@ -125,5 +107,4 @@ var myMusic = [
       "LP"
     ],
   }
-  // Add a record here
 ];
