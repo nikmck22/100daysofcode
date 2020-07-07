@@ -59,4 +59,43 @@ var myDog = {
 };
 
 // Only change code below this line
-myDog.name = "Happy Coder"
+myDog.name = "Happy Coder"; //(update)
+myDog.bark = "woof"; //(add)
+delete myDog.tails; //(delete)
+
+
+
+// Convert the switch statement into an object called lookup. Use it to look up val and assign the associated string to the result variable.
+function phoneticLookup(val) {
+  var result = "";
+
+  // Only change code below this line
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "Boston",
+    "charlie": "Chicago",
+    "delta": "Denver",
+    "echo": "Easy", 
+    "foxtrot": "Frank"
+  }; 
+  result = lookup[val];
+
+  // Only change code above this line
+  return result;
+}
+
+phoneticLookup("charlie");
+
+
+
+// Modify the function checkObj to test if an object passed to the function (obj) contains a specific property (checkProp). If the property is found, return that property's value. If not, return "Not Found".
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+if(obj.hasOwnProperty(checkProp)) {
+  return obj[checkProp];
+} else {
+  return "Not Found";
+}
+  return "Change Me!";
+  // Only change code above this line
+}
