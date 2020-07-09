@@ -10,7 +10,6 @@ var myStorage = {
     }
   }
 };
-
 var gloveBoxContents = myStorage.car.inside["glove box"];
 
 
@@ -34,9 +33,6 @@ var myPlants = [
     ]
   }
 ];
-
-// Only change code below this line
-
 var secondTree = myPlants[1].list[1];
 
 
@@ -73,8 +69,6 @@ var collection = {
     album: "ABBA Gold"
   }
 };
-
-// Only change code below this line
 function updateRecords(id, prop, value) {
 if (value === "") delete collection[id][prop]
 else if (prop == "tracks") {
@@ -85,7 +79,6 @@ else if (prop == "tracks") {
 }
   return collection;
 }
-
 updateRecords(5439, "artist", "ABBA");
 
 
@@ -97,3 +90,21 @@ while(i > -1) {
   myArray.push(i);
   i--;
 }
+
+
+
+// Use a for loop to work to push the values 1 through 5 onto myArray.
+var myArray = [];
+for (var i = 1; i < 6; i++) {
+  myArray.push(i);
+}
+
+
+
+// Change the while loop in the code to a do...while loop so the loop will push only the number 10 to myArray, and i will be equal to 11 when your code has finished running.
+var myArray = [];
+var i = 10;
+do {
+  myArray.push(i);
+  i++;
+} while (i < 10);
