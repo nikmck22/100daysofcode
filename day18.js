@@ -16,3 +16,24 @@ const resultDisplayArray = makeList(result.failure);
 
 
 
+// Use object property shorthand with object literals to create and return an object with name, age and gender properties.
+const createPerson = (name, age, gender) => {
+  "use strict";
+  return {
+    name,
+    age,
+    gender
+  };
+};
+
+
+
+// Refactor the function setGear inside the object bicycle to use the shorthand syntax described above.
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+
+
