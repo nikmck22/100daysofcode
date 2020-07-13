@@ -103,3 +103,4 @@ Day 19 notes
   - resolve and reject - completing promises
   - fulfilled promises using then
   - rejected promise with catch
+  - completed ES6
