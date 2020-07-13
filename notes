@@ -100,4 +100,6 @@ Day 18 notes
   - JS promise
 
 Day 19 notes
-  - resolve and reject
+  - resolve and reject - completing promises
+  - fulfilled promises using then
+  - rejected promise with catch
