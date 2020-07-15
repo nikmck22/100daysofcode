@@ -52,3 +52,10 @@ let result = quoteSample.match(/[h-s2-6]/gi)
 
 // Change the regex userCheck to fit the constraints listed above.
 /^[a-z]([0-9][0-9]+|[a-z]\d*)$/i
+
+
+
+// Change the regex ohRegex to match the entire phrase "Oh no" only when it has 3 to 6 letter h's.
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6}\sno/i; // Change this line
+let result = ohRegex.test(ohStr);

@@ -111,3 +111,5 @@ Day 20 notes
   - matching negated character sets (^)
   - shorthand character classes
   - whitespace characters
+  - quantity specifiers
+  - lookaheads
