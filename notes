@@ -108,3 +108,6 @@ Day 19 notes
 Day 20 notes
   - starting regular expressions
   - extracting matches (an instance or all)
+  - matching negated character sets (^)
+  - shorthand character classes
+  - whitespace characters
