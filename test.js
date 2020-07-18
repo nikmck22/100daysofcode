@@ -1,6 +1,14 @@
-function forecast(arr) {
-  arr.slice(2, 3);
-  return arr;
-}
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
 
-console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+// Only change code below this line
+
+// Only change code above this line
+
+console.log(userActivity);

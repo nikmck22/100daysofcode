@@ -137,4 +137,5 @@ Day 23 notes
   - multi-dimensional (nested) arrays
 
 Day 24 notes
-  - 
+  - JS objects -> key value pairs
+  - modifying objects within objects (or nested objects)
