@@ -1,14 +1,6 @@
-let userActivity = {
-  id: 23894201352,
-  date: 'January 1, 2017',
-  data: {
-    totalUsers: 51,
-    online: 42
-  }
-};
+function convertToF(celsius) {
+  let fahrenheit = celsius * (9/5) + 32;
+  return fahrenheit;
+}
 
-// Only change code below this line
-
-// Only change code above this line
-
-console.log(userActivity);
+convertToF(30);
