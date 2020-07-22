@@ -1,10 +1,12 @@
-//truncate a string
-function truncateString(str, num) {
-  var strLen = str.length;
-  var trunc = "...";
-  if (strLen > num) {
-    return str.substring(0, num) + trunc;
-  } 
+function findElement(arr, func) {
+  let num = 0;
+  for (var i = 0; i < arr.length; i++) {
+    num = arr[i];
+    if (func(num)) {
+      return num;
+    }
+  }
+  return undefined;
 }
 
-console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
+console.log(findElement([1, 2, 3, 4], num => num % 2 === 0));
