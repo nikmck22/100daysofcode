@@ -28,3 +28,12 @@ function confirmEnding(str, target) {
 }
 
 console.log(confirmEnding("Bastian", "ian"));
+
+function repeatStringNumTimes(str, num) {
+  var repeatStr = "";
+  while (num > 0) {
+    repeatStr += str;
+    num--;
+  }
+  return repeatStr;
+}
