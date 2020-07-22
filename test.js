@@ -1,21 +1,10 @@
-// function repeatStringNumTimes(str, num) {
-//   if (num > 0) {
-//     return str.repeat(num);
-//   } else {
-//     return "";
-//   }
-// }
-
-// console.log(repeatStringNumTimes("abc", 3));
-
-
-function repeatStringNumTimes(str, num) {
-  var repeatStr = "";
-  while (num > 0) {
-    repeatStr += str;
-    num--;
-  }
-  return repeatStr;
+//truncate a string
+function truncateString(str, num) {
+  var strLen = str.length;
+  var trunc = "...";
+  if (strLen > num) {
+    return str.substring(0, num) + trunc;
+  } 
 }
 
-console.log(repeatStringNumTimes("abc", 3));
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
