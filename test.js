@@ -1,5 +1,7 @@
-function booWho(bool) {
-  return typeof bool === "boolean";
+//title case a sentence
+function titleCase(str) {
+  str.slice(" ")
+  return str;
 }
 
-console.log(booWho(false));
+console.log(titleCase("I'm a little tea pot"));
