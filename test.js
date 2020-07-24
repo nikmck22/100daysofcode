@@ -1,10 +1,15 @@
-function bouncer(arr) {
-  let newArr = [];
+function getIndexToIns(arr, num) {
+  arr.sort(function(a, b) {
+    return a - b;
+  });
+
   for (var i = 0; i < arr.length; i++) {
-    if (arr[i]) newArr.push(arr[i]);
+    if (arr[i] >= num) return i;
   }
-  return newArr;
+
+  return arr.length;
 }
 
-console.log(bouncer([7, "ate", "", false, 9]));
+console.log(getIndexToIns([40, 60, 30, 20, 90, 45, 15], 50));
+
 
