@@ -1,8 +1,10 @@
 function bouncer(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    
+  let newArr = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i]) newArr.push(arr[i]);
   }
-  // return arr;
+  return newArr;
 }
 
 console.log(bouncer([7, "ate", "", false, 9]));
+
