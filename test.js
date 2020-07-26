@@ -1,15 +1,6 @@
-function getIndexToIns(arr, num) {
-  arr.sort(function(a, b) {
-    return a - b;
-  });
-
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] >= num) return i;
-  }
-
-  return arr.length;
+function mutation(arr) {
+  arr.toLowerCase();
+  return arr;
 }
 
-console.log(getIndexToIns([40, 60, 30, 20, 90, 45, 15], 50));
-
-
+console.log(mutation(["hello", "HEY"]));
