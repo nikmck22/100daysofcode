@@ -48,3 +48,12 @@ for (let property in canary) {
     ownProps.push(property);
   }
 }
+
+
+
+//prototype for duplicate properties
+function Dog(name) {
+  this.name = name;
+}
+Dog.prototype.numLegs = 4;
+let beagle = new Dog("Snoopy");

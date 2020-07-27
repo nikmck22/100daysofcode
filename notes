@@ -167,4 +167,5 @@ Day 31 notes
       // Constructors use the keyword this to set properties of the object they will create. Inside the constructor, this refers to the new object it will create.
       // Constructors define properties and behaviors instead of returning a value as other functions might.
   - understand own properties
+  - prototype properties
  
