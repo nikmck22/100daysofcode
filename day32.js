@@ -3,7 +3,7 @@ function Dog(name) {
   this.name = name;
 }
 
-// Only change code below this line
+
 function joinDogFraternity(candidate) {
   if (candidate.constructor === Dog) {
     return true;
@@ -20,7 +20,7 @@ function Dog(name) {
 }
 
 Dog.prototype = {
-  // Only change code below this line
+  
   numLegs: 4,
   eat: function() {
     console.log("kibble")
@@ -37,7 +37,7 @@ function Dog(name) {
   this.name = name;
 }
 
-// Only change code below this line
+
 Dog.prototype = {
   constructor: Dog,
   numLegs: 4,
@@ -57,7 +57,7 @@ function Dog(name) {
 
 let beagle = new Dog("Snoopy");
 
-// Only change code below this line
+
 Dog.prototype.isPrototypeOf(beagle)
 
 
@@ -72,10 +72,36 @@ Animal.prototype = {
   }
 };
 
-// Only change code below this line
 
-let duck = Object.create(Animal.prototype); // Change this line
-let beagle = Object.create(Animal.prototype); // Change this line
+
+let duck = Object.create(Animal.prototype); 
+let beagle = Object.create(Animal.prototype); 
+
+
+
+// Add all necessary code so the Dog object inherits from Animal and the Dog's prototype constructor is set to Dog. Then add a bark() method to the Dog object so that beagle can both eat() and bark(). The bark() method should print "Woof!" to the console.
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function() {
+  console.log("Woof!")
+}
+
+
+let beagle = new Dog();
+
+
+
+// Rewrite the function makeNest and remove its call so instead it's an anonymous immediately invoked function expression (IIFE).
+(function () {
+  console.log()
+})()
+
 
 
 

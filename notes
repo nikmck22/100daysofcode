@@ -173,4 +173,6 @@ Day 32 notes
   - Object Oriented Programming
   - properties, constructors, prototypes
   - using inheritance (supertype)
+  - using mixins
+  - immediatlely invoked expressions functions
  
