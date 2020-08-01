@@ -146,3 +146,28 @@ var filteredList = watchList.map(function(i) {
 // Only change code above this line
 
 console.log(filteredList);
+
+
+
+//return part an array with slice
+function sliceArray(anim, beginSlice, endSlice) {
+  // Only change code below this line
+var newArr = anim.slice(beginSlice, endSlice);
+return newArr;
+  // Only change code above this line
+}
+var inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
+console.log(sliceArray(inputAnim, 1, 3));
+
+
+
+//removing elements using slice instead of splice
+function nonMutatingSplice(cities) {
+  // Only change code below this line
+  var newArr = cities.slice(0, 3);
+  return newArr;
+
+  // Only change code above this line
+}
+var inputCities = ["Chicago", "Delhi", "Islamabad", "London", "Berlin"];
+console.log(nonMutatingSplice(inputCities));
