@@ -1,16 +1,9 @@
-// The global variable
-var globalTitle = "Winter Is Coming";
-
-// Only change code below this line
-function urlSlug(title) {
-return title
-.split(/\W/)
-.filter(obj => {
-  return obj !== "";
+function checkPositive(arr) {
+  // Only change code below this line
+return arr.some(function(value) {
+  return value > 0;
 })
-.join("-")
-.toLowerCase();
 
+  // Only change code above this line
 }
-// Only change code above this line
-console.log(urlSlug(globalTitle))
+console.log(checkPositive([1, 2, 3, -4, 5]));

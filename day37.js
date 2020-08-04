@@ -79,3 +79,28 @@ return title
 }
 // Only change code above this line
 console.log(urlSlug(globalTitle))
+
+
+
+
+//every method
+function checkPositive(arr) {
+  // Only change code below this line
+return arr.every(function(value) {
+  return value > 0;
+})
+
+  // Only change code above this line
+}
+console.log(checkPositive([1, 2, 3, -4, 5]));
+
+//some method
+function checkPositive(arr) {
+  // Only change code below this line
+return arr.some(function(value) {
+  return value > 0;
+})
+
+  // Only change code above this line
+}
+console.log(checkPositive([1, 2, 3, -4, 5]));
