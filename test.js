@@ -1,9 +1,7 @@
-function checkPositive(arr) {
-  // Only change code below this line
-return arr.some(function(value) {
-  return value > 0;
-})
-
-  // Only change code above this line
+function diffArray(arr1, arr2) {
+  var newArr = arr1.concat(arr2);
+  return newArr.filter(item => !arr1.includes(item) || !arr2.includes(item));
+  
 }
-console.log(checkPositive([1, 2, 3, -4, 5]));
+
+console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));
