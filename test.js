@@ -1,9 +1,8 @@
 
 
 function translatePigLatin(str) {
-  var regex = /\s+|_+/g;
-  str = str.replace(/([a-z])([A-Z])/g, "$1 $2");
-  return str.replace(regex, "-").toLowerCase();
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  let newStr = "";
 }
 
 console.log(translatePigLatin("consonant"));
