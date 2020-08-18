@@ -1,21 +1,13 @@
-
-
-function translatePigLatin(str) {
-  let regEx = /[aeiou]/gi;
-  let newStr = str.toLowerCase();
-  let charIndex;
-
-  if (newStr[0].match(regEx)) {
-    return newStr + "way";
+function myReplace(str, before, after) {
+  var index = str.indexOf(before);
+  if (str[index] === str[index].toUpperCase()) {
+    after = after.charAt(0).toUpperCase() + after.slice(1);
+  } else {
+    after = after.charAt(0).toLowerCase() + after.slice(1);
   }
-  
-  for (char of newStr) {
-    if (char.match(regEx)) {
-      charIndex = newStr.indexOf(char);
-      break;
-    }
-  }
-  return newStr.slice(charIndex) + newStr.slice(0, charIndex) + "ay";
+  str = str.replace(before, after);
+  return str;
 }
 
-console.log(translatePigLatin("consonant"));
+console.log(myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"));
+
