@@ -28,3 +28,25 @@ function uniteUnique(arr) {
 }
 
 console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+
+
+//html entities
+function convertHTML(str) {
+  function strEncode(char) {
+    switch (char) {
+    case "&":
+      return "&amp;";
+    case "<":
+      return "&lt;";
+    case ">":
+      return "&gt;";
+    case "'":
+      return "&apos;";
+    case '"':
+      return "&quot;";
+    }
+  }
+  return str.replace(/[&<>"';]/g, strEncode);
+}
+
+console.log(convertHTML("Schindler's List"));
