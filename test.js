@@ -1,19 +1,13 @@
-function convertHTML(str) {
-  function strEncode(char) {
-    switch (char) {
-    case "&":
-      return "&amp;";
-    case "<":
-      return "&lt;";
-    case ">":
-      return "&gt;";
-    case "'":
-      return "&apos;";
-    case '"':
-      return "&quot;";
-    }
+function sumFibs(num) {
+  var a = 0;
+  var b = 1;
+  var c;
+  for (var i = 0; i < num; i++) {
+    c = a + b;
+    a = b;
+    b = c;
   }
-  return str.replace(/[&<>"';]/g, strEncode);
+  return c;
 }
 
-console.log(convertHTML("Schindler's List"));
+console.log(sumFibs(4));
