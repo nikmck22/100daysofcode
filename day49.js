@@ -45,3 +45,17 @@ function dropElements(arr, func) {
 }
 
 console.log(dropElements([1, 2, 3], function(n) {return n >= 3; }));
+
+
+
+//flatten nested array
+function steamrollArray(arr) {
+  return arr.reduce(function(a,b) {
+    if (Array.isArray(b)) {
+      return a.concat(steamrollArray(b));
+    } 
+    return a.concat(b);
+  }, []);
+}
+
+console.log(steamrollArray([1, [2], [3, [[4]]]]));
