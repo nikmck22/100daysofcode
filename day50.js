@@ -9,3 +9,17 @@ var containsDuplicate = function(nums) {
       }
   } return false
 };
+
+
+var containsDuplicate = function(nums) {
+  let prev=null;
+  nums=nums.sort();
+
+  for (let i=0;i<nums.length;i++) {
+    if (nums[i]===prev){
+      return true;
+    }else {
+      prev=nums[i];
+    } return false;
+  }
+};
