@@ -1,32 +1,13 @@
-function addTogether() {
-  var checkNum = function(num) {
-    if (typeof num !== "number") {
-      return undefined;
-    } else return num;
+var Person = function(firstAndLast) {
+  // Only change code below this line
+  // Complete the method below and implement the others similarly
+  this.getFullName = function() {
+    return "";
   };
+  return firstAndLast;
+};
 
-  if (arguments.length > 1) {
-    var a = checkNum(arguments[0]);
-    var b = checkNum(arguments[1]);
-    if (a === undefined || b === undefined) {
-      return undefined;
-    } else {
-      return a + b;
-    } 
-  } else {
-    var c = arguments[0];
-    if (checkNum(c)) {
-      return function(arg2) {
-        if (c === undefined || checkNum(arg2) === undefined) {
-          return undefined;
-        } else {
-          return c + arg2;
-        }
-      };
-    }
-  }
-}
-
-console.log(addTogether(2));
-
+var bob = new Person('Bob Ross');
+bob.getFullName();
+bob.setFullName = "phillie"
 
